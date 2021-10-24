@@ -194,14 +194,24 @@ end</pre>
 <script>
 var winkVideoData = {
   dataVersion: 1,
-  frameRate: 20,
-  buttonFrameLength: 10,
-  buttonFrameOffset: 5,
-  frameStops: {
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {"2": [
+      { type: "gotoframe", rect: { x: 669, y: 263, width: 37, height: 14 }, target: 3 },
+    ],
+    "7": [
+      { type: "gotoframe", rect: { x: 695, y: 134, width: 37, height: 14 }, target: 8 },
+      { type: "gotoframe", rect: { x: 640, y: 135, width: 37, height: 14 }, target: 2 },
+    ],
+    "149": [
+      { type: "gotoframe", rect: { x: 646, y: 263, width: 37, height: 14 }, target: 7 },
+      { type: "gotoframe", rect: { x: 701, y: 264, width: 37, height: 14 }, target: 150 },
+    ],
   },
 };
 </script>
-<div class="winkVideoContainerClass"><video class="winkVideoClass" data-dirname="static" data-varname="winkVideoData" height="666" width="1230">
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData" height="666" width="1230">loop="loop" muted="" playsinline=""&gt;
 <source src="./../downloads/測試.mp4" type="video/mp4"/></video>
 <div class="winkVideoOverlayClass"></div>
 <div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>

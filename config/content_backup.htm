@@ -191,3 +191,35 @@ end</pre>
 <p>1.設定Path to FFmpeg時：需先使用過ShareX錄製過影片，才會有ffmpeg檔案供選擇</p>
 <p>2.Render：視窗大小需為偶數</p>
 <h2>測試</h2>
+<script>
+var winkVideoData = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {"2": [
+      { type: "gotoframe", rect: { x: 669, y: 263, width: 37, height: 14 }, target: 3 },
+    ],
+    "7": [
+      { type: "gotoframe", rect: { x: 695, y: 134, width: 37, height: 14 }, target: 8 },
+      { type: "gotoframe", rect: { x: 640, y: 135, width: 37, height: 14 }, target: 2 },
+    ],
+    "149": [
+      { type: "gotoframe", rect: { x: 646, y: 263, width: 37, height: 14 }, target: 7 },
+      { type: "gotoframe", rect: { x: 701, y: 264, width: 37, height: 14 }, target: 150 },
+    ],
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData" height="666" width="1230">loop="loop" muted="" playsinline=""&gt;
+<source src="./../downloads/測試.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
